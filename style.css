@@ -1,0 +1,688 @@
+*{
+    margin: 0;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #F7F6F4;
+    scroll-behavior: smooth;
+}
+button{
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    display: inline;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.menu{
+    height: 30px;
+    margin-top: 10px;
+    padding: 10px;
+    display: none;
+}
+nav ul li:hover{
+    background-color: white;
+    border-radius: 30px;
+}
+nav .title{
+    position: relative;
+    right: 5%;
+    font-size: 7rem;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Whisper', cursive;
+}
+nav button{
+    padding: 10px;
+    border: none;
+}
+.logIn{
+    background-color: transparent;
+}
+.signUp{
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+}
+.banner{
+    background-color: #00373E;
+    height: 70vh;
+    border-radius: 30px;
+}
+.banner .text{
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+}
+.banner .text h1{
+    font-size: 4rem;
+    line-height: 70px;
+}
+.banner .text p{
+    font-size: 2rem;
+    padding: 0 400px;
+    margin-top: 15px;
+}
+.banner .text button{
+    margin-top: 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: #04636f;
+    padding: 10px;
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+.banner .text button:hover{
+    transform:translateY(-5px);
+    background: #7da89d;
+}
+.gridTemplate{
+    display: grid;
+    height: 60vh;
+    margin: 20px 0;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.gridTemplate .card1{
+    padding: 30px;
+    margin-left: 30px;
+}
+.gridTemplate .card1 h2{
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 70px;
+}
+.gridTemplate .card1 p{
+    font-size: 1.3rem;
+}
+.gridTemplate .card1 ul{
+    list-style: none;
+}
+
+.gridTemplate .card1 ul li:hover{
+    background-color: white;
+    border-radius: 30px;
+    width: 150px;
+    cursor: pointer;
+}
+.gridTemplate .card1 ul li:hover::before{
+    content: "⁕";
+    margin-right: 5px;
+}
+.gridTemplate .card2 .highlight{
+    background-color: white;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    width: 70%;
+    height: 80%;
+    border-radius: 30px;
+}
+.gridTemplate .card2 .highlight img{
+    width: 90%;
+    height: 60%;
+    border-radius: 30px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.gridTemplate .card2 .highlight p{
+    text-align: center;
+    line-height: 20px;
+}
+.feedback{
+    display: flex;
+}
+.testimonials{
+    margin-top: 100px;
+    height: 50vh;
+    width: 50%;
+}
+.testimonials h1{
+    font-weight: 600;
+    font-size: 3.1rem;
+    line-height: 50px;
+}
+.review{
+    margin-top: 90px;
+    display: flex;
+    gap: 10px;
+    color: white;
+    padding: 30px;
+}
+.review .first{
+    height: 50vh;
+    width: 500px;
+    border-radius: 30px;
+    background: #00373E;
+    word-wrap: break-word;
+    margin-left: 35%;
+}
+.review .second{
+    height: 50vh;
+    width: 500px;
+    border-radius: 30px;
+    background: #93954C;
+    word-wrap: break-word;
+}
+.navbar2{
+    height: 100px;
+    width: 100%;
+    background: #FBD4B7;
+    border-radius: 30px;
+}
+.navbar2 ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.navbar2 h2{
+    font-weight: 300;
+    font-size: 1rem;
+}
+.forbes{
+    margin-top: -25px;
+}
+.parents{
+    margin-top: 0px;
+}
+.tnyt{
+    margin-top: -25px;
+}
+.features{
+    margin-top: 100px;
+    text-align: center;
+}
+span{
+    color:#FBD4B7
+}
+.features h1{
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 50px;
+}
+.features h2{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.gridTemplate2{
+    display: grid;
+    height: 70vh;
+    width: 60vw;
+    position: relative;
+    left: 20%;
+    grid-template-columns: 445px 445px;
+    grid-template-rows: 320px 320px;
+    gap: 30px;
+}
+.gridTemplate2 .card3{
+    background: white;
+    border-radius: 30px;
+}
+.gridTemplate2 .card3 h1,
+.gridTemplate2 .card4 h1{
+    font-weight: 500;
+}
+.gridTemplate2 .card3 p,
+.gridTemplate2 .card4 p{
+    width: 195px;
+    word-wrap: break-word;
+}
+.gridTemplate2 .card4{
+    background: white;
+    border-radius: 30px;
+}
+.gridTemplate2 .card5{
+    background: white;
+    grid-column: span 2;
+    border-radius: 30px;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.gridTemplate2 .card5 .images{
+    display: flex;
+    justify-content: space-between;
+}
+.gridTemplate2 .card5 h1{
+    font-weight: 500;
+}
+.gridTemplate2 .card5 .text{
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+.accordian{
+    margin: 250px 0 80px 0;
+    width: 60vw;
+    position: relative;
+    left: 20%;
+    transform: translateX(-50%);
+}   
+.accordian .common{
+    display: flex;
+    justify-content: space-between;
+}
+.accordian .common button{
+    border: none;
+    border-radius: 30px;
+    background: #CBFFF2;
+}
+.accordian .common button:hover{
+    background: #92f6dd;
+}
+input[type="radio"]{
+    display: none;
+}
+label{
+    cursor: pointer;
+}
+.accordian ul li{
+    list-style: none;
+    background: white;
+    padding: 20px 0 0 20px;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+.answer{
+    font-size: 1.1rem;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+.accordian ul li input[type="radio"]:checked + label + .answer{
+    height: 100px;
+}
+.footer{
+    height: 40vh;
+    width: 100%;
+    border-radius: 30px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 300px;
+}
+.footer .card6{
+    background: #00373E;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+}
+.footer .card6 h1{
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 40px;
+}
+.footer .card6 p{
+    font-size: 1.2rem;
+}
+.footer .card6 button{
+    border: none;
+    border-radius: 30px;
+    position: relative;
+    padding: 10px;
+    top: 30%;
+    left: 2%;
+    transition: 0.2s;
+}
+.footer .card6 button:hover{
+    transform: translateY(-5px);
+}
+.footer .card7{
+    background: white;
+    border-radius: 30px;
+    display: flex;
+    gap: 40px;
+}
+.footer ul li{
+    list-style: none;
+}
+.footer .logo{
+    position: relative;
+    top: -10%;
+    left: 25%; 
+    font-size: 5rem;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Whisper', cursive;
+}
+.terms{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+.terms h2{
+    font-weight: 300;
+}
+
+@media (max-width:768px) {
+    nav .title{
+        font-size: 3rem;
+    }
+    nav ul li{
+        font-size: 0.7rem;
+    }
+    nav button{
+        font-size: 0.7rem;
+        padding: 8px;
+    }
+    .banner{
+        height: 30vh;
+    }
+    .banner .text h1{
+        font-size: 3rem;
+        line-height: 50px;
+    }
+    .banner .text p{
+        font-size: 1.2rem;
+        padding: 0 50px;
+        margin-top: 15px;
+    }
+    .banner .text button{
+        font-size: 1rem;
+    }
+    .gridTemplate{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .gridTemplate .card2 .highlight{
+        top: -10%;
+        width: 100%;
+    }
+    .feedback{
+        flex-direction: column;
+    }
+    .testimonials{
+        margin-top: 60%;
+        width: 100%;
+    }
+    .testimonials h1{
+        font-size: 2.9rem;
+    }
+    .review{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .review .first{
+        height: 20vh;
+        width: 100%;
+        margin-left: 0%;
+        margin-top: -90%;
+    }
+    .review .second{
+        height: 20vh;
+        width: 100%;
+    }
+    .navbar2{
+        height: 80px;
+    }
+    .navbar2 h2{
+        font-weight: 300;
+        font-size: 0.7rem;
+        margin-left: -20px;
+    }
+    .forbes{
+        height: 60px;
+    }
+    .parents{
+        height: 20px;
+        margin-top: -6px;
+    }
+    .tnyt{
+        height: 60px;
+    }
+    .mom{
+        height: 15px;
+    }
+    .features{
+        margin-top: 30px;
+        text-align: center;
+    }
+    .gridTemplate2{
+        display: flex;
+        flex-direction: column;
+    }
+    .gridTemplate2 .card3,
+    .gridTemplate2 .card4,
+    .gridTemplate2 .card5{
+        height: 300px;
+        width: 600px;
+        margin-left: -20%;
+    }
+    .gridTemplate2 .card3 img,
+    .gridTemplate2 .card4 img{
+        position: relative;
+    }
+    .gridTemplate2 .card5 img{
+        height: 180px;
+    }
+    .gridTemplate2 .card5 h1{
+        margin-top: -50px;
+    }
+    .gridTemplate2 .card3 p,
+    .gridTemplate2 .card4 p{
+        width: 250px;
+        word-wrap: break-word;
+    }
+    .accordian{
+        margin-top: 180px;
+        width: 100%;
+        margin-bottom: 0;
+        position: relative;
+        left: 0;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .card6 button{
+        top: 0;
+        left: 85%;
+    }
+    .footer .logo{
+        position: relative;
+        left: 0;
+    }
+    .terms{
+        font-size: 0.6rem;
+    }
+}
+@media (max-width:576px) {
+    *{
+        padding: 5px;
+    }
+    nav{
+        position: relative;
+        top: -20px;
+    }
+    nav ul li{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    nav .title{
+        left: -80px;
+        font-size: 5rem;
+        font-weight: 300;
+    }
+    .banner{
+        position: relative;
+        top: -50px;
+        height: 30vh;
+        padding: 0;
+    }
+    .banner .text h1{
+        font-size: 1.5rem;
+        line-height: 40px;
+    }
+    .banner .text p{
+        font-size: 0.9rem;
+        padding: 0;
+    }
+    .gridTemplate{
+        width: 100vw;
+        position: relative;
+        top: -50px;
+        left: -30px;
+    }
+    .gridTemplate .card1{
+        padding: 8px;
+        margin-left: 20px;
+    }
+    .gridTemplate .card1 h2{
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+    .gridTemplate .card1 p{
+        font-size: 0.8rem;
+    }
+    .gridTemplate .card2 .highlight{
+        top: -10%;
+        width: 90%;
+    }
+    .feedback{
+        position: relative;
+        top: -200px;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .testimonials{
+        width: 100vw;
+    }
+    .testimonials h1{
+        font-size: 2rem;
+        line-height: 30px;
+    }
+    .review{
+        position: relative;
+        margin-top: 0px;
+        left: -10%;
+    }
+    .review .first,
+    .review .second{
+        padding: 10px;
+        height: 15vh;
+        width: 90vw;
+    }
+    .review p{
+        font-size: 0.7rem;
+    }
+    .navbar2{
+        margin-top: -60%;
+        height: 50%;
+    }
+    .navbar2 h2{
+        font-size: 0.3rem;
+        position: relative;
+        top: 20%;
+        left: 10%;
+    }
+    .forbes{
+        height: 40px;
+        position: relative;
+        top: 50%;
+    }
+    .parents{
+        height: 15px;
+        margin-top: -6px;
+        position: relative;
+        top: 30%;
+    }
+    .tnyt{
+        height: 40px;
+        position: relative;
+        top: 50%;
+    }
+    .mom{
+        height: 10px;
+        position: relative;
+        top: 15%;
+    }
+    .features{
+        width: 90vw;
+    }
+    .features h1{
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 50px;
+    }
+    .features h2{
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+    .gridTemplate2 .card3,
+    .gridTemplate2 .card4,
+    .gridTemplate2 .card5{
+        height: 500px;
+        width: 300px;
+        margin-left: -20%;
+    }
+    .gridTemplate2 .card5 .text{
+        display: block;
+        margin-top: 40px;
+    }
+    .gridTemplate2 .card5 .img{
+        position: relative;
+        top: 30%;
+        height: 60vh;
+    }
+    .gridTemplate2 .card5 .thirdImage{
+        display: none;
+    }
+    .gridTemplate2 .card5 .images{
+        flex-direction: column;
+    }
+    .accordian{
+        position: relative;
+        margin-top: 250%;
+    }
+    .accordian ul li input[type="radio"]:checked + label + .answer{
+        height: 150px;
+    }
+    .footer .card6 button{
+        top: 0;
+        left: 70%;
+    }
+    .footer .logo{
+        position: relative;
+        left: 0;
+    }
+    .footer .card6 h1{
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    .footer .card6 p{
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    .footer .card7{
+        gap: 20px;
+    }
+    .footer .logo{
+        position: relative;
+        font-size: 3rem;
+        top: -20%;
+    }
+    .card7 ul li{
+        font-size: 0.5rem;
+    }
+    .terms{
+        position: relative;
+        top: 30px;
+        font-size: 0.4rem;
+    }
+}
